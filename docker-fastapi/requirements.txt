@@ -1,0 +1,11 @@
+fastapi==0.78.0
+uvicorn==0.17.6
+pydantic==1.9.1
+pandas==1.4.2
+typing==3.7.4.3
+joblib==1.0.1
+scikit-learn
+python-multipart
+passlib[bcrypt]
+datetime
+python-jose[cryptography]

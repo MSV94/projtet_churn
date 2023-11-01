@@ -1,0 +1,613 @@
+
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permissions"
+    | username="alice"
+    | password="wonderland"
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Model
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permissions"
+    | username="bob"
+    | password="builder"
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'DecisionTreeClassifier', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Model
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Get test
+    ============================
+
+    request done at "/"
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permissions"
+    | username="clementine"
+    | password="mandarine"
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'test', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Model
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Score test
+    ============================
+
+    request done at "/score"
+
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Get test
+    ============================
+
+    request done at "/"
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permissions"
+    | username="clementine"
+    | password="manda"
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 1, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : SeniorCitizen
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Score test
+    ============================
+
+    request done at "/score"
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        Authentication test
+    ============================
+
+    request done at "/permissions"
+    | username="pierre"
+    | password="granite"
+
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 'test', 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : SeniorCitizen
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'no', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Partner
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'test', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Partner
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'no', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Dependents
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'test', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Dependents
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 'test', 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : tenure
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'no', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PhoneService
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'test', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PhoneService
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'no', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : OnlineSecurity
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'test', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : OnlineSecurity
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'no', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : OnlineBackup
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'test', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : OnlineBackup
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'no', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : DeviceProtection
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'test', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : DeviceProtection
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'no', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : TechSupport
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'test', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : TechSupport
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'no', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaperlessBilling
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'test', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaperlessBilling
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 'test', 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : MonthlyCharges
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'credit card (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaymentMethod
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'electronic check', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaymentMethod
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'mailed check', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaymentMethod
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'test', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : PaymentMethod
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'one year', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Contract
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'two year', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Contract
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'test', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : Contract
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'fiber optic', 'MultipleLines': 'yes'}
+    parameters changed : InternetService
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'no', 'MultipleLines': 'yes'}
+    parameters changed : InternetService
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'test', 'MultipleLines': 'yes'}
+    parameters changed : InternetService
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'no'}
+    parameters changed : MultipleLines
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'no phone service'}
+    parameters changed : MultipleLines
+    expected result = 200
+    actual restult = 200
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'test'}
+    parameters changed : MultipleLines
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 2, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : SeniorCitizen
+    expected result = 422
+    actual restult = 422
+
+    ==>  SUCCESS
+
+    
+    ============================
+        modelisation test
+    ============================
+        request done at "/modelisation"
+
+    parameters tested : {'Model': 'Randomforest', 'SeniorCitizen': 0, 'Partner': 'yes', 'Dependents': 'yes', 'tenure': 50, 'PhoneService': 'yes', 'OnlineSecurity': 'yes', 'OnlineBackup': 'yes', 'DeviceProtection': 'yes', 'TechSupport': 'yes', 'PaperlessBilling': 'yes', 'MonthlyCharges': 50, 'PaymentMethod': 'bank transfer (automatic)', 'Contract': 'month-to-month', 'InternetService': 'dsl', 'MultipleLines': 'yes'}
+    parameters changed : token
+    expected result = 401
+    actual restult = 401
+
+    ==>  SUCCESS
+
+    

@@ -1,0 +1,56 @@
+version: "3.9"
+services:
+  api:
+    build: ./docker-fastapi
+    image: api_churn
+    container_name: my_api_container
+    networks:
+      - my_network
+    ports:
+      - target: 8000
+        published: 8000
+        protocol: tcp
+        mode: host
+  my_test_1:
+    build: ./docker-authentification
+    image: test_authentication
+    container_name: my_test_authentication
+    networks:
+      - my_network
+    depends_on:
+      - api
+    volumes:
+      - .:/home/work
+  my_test_2:
+    build: ./docker-score
+    image: test_score
+    container_name: test_score
+    networks:
+      - my_network
+    depends_on:
+      - api
+    volumes:
+      - .:/home/work
+  my_test_3:
+    build: ./docker-modelisation
+    image: test_modelisation
+    container_name: my_test_modelisation
+    networks:
+      - my_network
+    depends_on:
+      - api
+    volumes:
+      - .:/home/work
+  my_test_4:
+    build: ./docker-get
+    image: test_get
+    container_name: my_test_get
+    networks:
+      - my_network
+    depends_on:
+      - api
+    volumes:
+      - .:/home/work
+
+networks:
+  my_network:
